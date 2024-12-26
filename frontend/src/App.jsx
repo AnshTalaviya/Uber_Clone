@@ -6,6 +6,7 @@ import Riding from './pages/Riding'
 import CaptainRiding from './pages/CaptainRiding'
 import UserSignup from './pages/UserSignup'
 import Captainlogin from './pages/Captainlogin'
+import CaptainSignup from './pages/CaptainSignup'
 import 'remixicon/fonts/remixicon.css'
 
 const App = () => {
@@ -20,7 +21,7 @@ const App = () => {
 
         <Route path='/signup' element={<UserSignup />} />
         <Route path='/captain-login' element={<Captainlogin />} />
-
+        <Route path='/captain-signup' element={<CaptainSignup />} />
       </Routes>
     </div>
   )
