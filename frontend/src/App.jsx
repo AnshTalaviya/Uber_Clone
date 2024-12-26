@@ -7,12 +7,13 @@ import CaptainRiding from './pages/CaptainRiding'
 import UserSignup from './pages/UserSignup'
 import Captainlogin from './pages/Captainlogin'
 import CaptainSignup from './pages/CaptainSignup'
-import 'remixicon/fonts/remixicon.css'
 import UserProtectWrapper from './pages/UserProtectWrapper'
 import Home from './pages/Home'
 import UserLogout from './pages/UserLogout'
 import CaptainLogout from './pages/CaptainLogout'
 import CaptainHome from './pages/CaptainHome'
+import CaptainProtectWrapper from './pages/CaptainProtectWrapper'
+import 'remixicon/fonts/remixicon.css'
 
 const App = () => {
 
