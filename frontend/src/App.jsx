@@ -1,13 +1,16 @@
-import './App.css'
+import React, { useContext } from 'react'
+import { Route, Routes } from 'react-router-dom'
+import Start from './pages/Start'
+import 'remixicon/fonts/remixicon.css'
 
-function App() {
+const App = () => {
 
   return (
-    <>
-      <div>
-        hghhh
-      </div>
-    </>
+    <div>
+      <Routes>
+        <Route path='/' element={<Start />} />
+      </Routes>
+    </div>
   )
 }
 
