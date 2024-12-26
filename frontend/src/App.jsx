@@ -8,6 +8,8 @@ import UserSignup from './pages/UserSignup'
 import Captainlogin from './pages/Captainlogin'
 import CaptainSignup from './pages/CaptainSignup'
 import 'remixicon/fonts/remixicon.css'
+import UserProtectWrapper from './pages/UserProtectWrapper'
+import Home from './pages/Home'
 
 const App = () => {
 
@@ -22,6 +24,12 @@ const App = () => {
         <Route path='/signup' element={<UserSignup />} />
         <Route path='/captain-login' element={<Captainlogin />} />
         <Route path='/captain-signup' element={<CaptainSignup />} />
+        <Route path='/home'
+          element={
+            <UserProtectWrapper>
+              <Home />
+            </UserProtectWrapper>
+          } />
       </Routes>
     </div>
   )
