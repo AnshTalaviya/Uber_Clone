@@ -10,6 +10,7 @@ import CaptainSignup from './pages/CaptainSignup'
 import 'remixicon/fonts/remixicon.css'
 import UserProtectWrapper from './pages/UserProtectWrapper'
 import Home from './pages/Home'
+import UserLogout from './pages/UserLogout'
 
 const App = () => {
 
@@ -29,6 +30,11 @@ const App = () => {
             <UserProtectWrapper>
               <Home />
             </UserProtectWrapper>
+          } />
+        <Route path='/user/logout'
+          element={<UserProtectWrapper>
+            <UserLogout />
+          </UserProtectWrapper>
           } />
       </Routes>
     </div>
